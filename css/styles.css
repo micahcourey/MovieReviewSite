@@ -1,0 +1,13 @@
+.center {
+  margin-top: 10%;
+  text-align: center;
+}
+
+.darkmode {
+  background-color: black;
+  color: red;
+}
+
+.enter {
+  width: 150px
+}

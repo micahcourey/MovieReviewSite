@@ -9,6 +9,7 @@
               <p>{{ item.body }}</p>
             </div>
           </div>
+          <br><button class="btn btn-danger" ng-click="toggle()">Dark Mode</button>
         </div>
     </div>
     <div class="col-md-8">
@@ -18,8 +19,9 @@
           <input size="60" type="text" ng-model="MoviesFactory.topicTitle" class="form-control" placeholder="Enter a title"><br><br>
           <textarea rows="4" cols="60" type="text" ng-model="MoviesFactory.topicBody" class="form-control" placeholder="Enter your review"></textarea><br><br>
         </div><br>
-        <button type="submit">Submit</button>
+        <button class="btn btn-info" type="submit">Submit</button>
       </form>
+
     </div>
   </div>
 </div>
