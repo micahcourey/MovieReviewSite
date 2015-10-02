@@ -3,14 +3,14 @@
     <div ng-show="topics.length">
       <div class="col-md-4">
         <legend><h3>Movie Reviews</h3></legend>
-          <div ng-repeat="item in topics">
-            <a href="" ng-click="showBody = ! showBody">{{ item.title }}</a>
-            <div ng-show="showBody">
-              <p>{{ item.body }}</p>
-            </div>
+        <div ng-repeat="item in topics">
+          <a href="" ng-click="showBody = ! showBody">{{ item.title }}</a>
+          <div ng-show="showBody">
+            <p>{{ item.body }}</p>
           </div>
-          <br><button class="btn btn-danger" ng-click="toggle()">Dark Mode</button>
         </div>
+        <br><button class="btn btn-danger" ng-click="toggle()">Dark Mode</button>
+      </div>
     </div>
     <div class="col-md-8">
       <legend><h3>Add a movie review</h3></legend>
@@ -21,7 +21,6 @@
         </div><br>
         <button class="btn btn-info" type="submit">Submit</button>
       </form>
-
     </div>
   </div>
 </div>

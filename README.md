@@ -3,7 +3,7 @@ Movie Review Site
 
 By Micah Courey, 02-Oct-2015
 
-A website built in AngularJS that allows users to have discussions about movies.
+A website built in AngularJS that allows users to write reviews about movies.
 
 Setup
 ----------
