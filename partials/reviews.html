@@ -1,20 +1,23 @@
 <div class="container-fluid">
   <div class="row">
-    <div class="col-sm-4">
-      <div ng-show="topics.length">
+    <div ng-show="topics.length">
+      <div class="col-md-4">
         <legend><h2>Movie Reviews</h2></legend>
           <div ng-repeat="item in topics">
-            <a>{{ item.title }}</a>
+            <a href="" ng-click="showBody = ! showBody">{{ item.title }}</a>
+            <div ng-show="showBody">
+              <p>{{ item.body }}</p>
+            </div>
           </div>
       </div>
     </div>
-    <div class="col-sm-8">
+    <div class="col-md-8">
       <h3>Add a movie review</h3>
       <form ng-submit="MoviesFactory.addTopic()" class="form-inline" role="form">
         <div class="form-group">
-          <input type="text" ng-model="MoviesFactory.title" class="form-control" placeholder="Enter a title"><br>
-          <textarea type="text" ng-model="MovieFactory.body" class="form-control" placeholder="Enter your review"><br>
-        </div>
+          <input type="text" ng-model="MoviesFactory.topicTitle" class="form-control" placeholder="Enter a title"><br>
+          <input type="text" ng-model="MoviesFactory.topicBody" class="form-control" placeholder="Enter your review"><br>
+        </div><br>
         <button type="submit">Submit</button>
       </form>
     </div>
