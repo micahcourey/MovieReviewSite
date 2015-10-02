@@ -3,7 +3,7 @@ movieSite.factory('MoviesFactory', function MoviesFactory() {
   factory.topics = [];
 
   factory.addTopic = function() {
-    factory.topics.push({ title: factory.topicTitle, id: factory.topics.length + 1, discussions: [] });
+    factory.topics.push({ title: factory.topicTitle, body: factory.topicBody });
     factory.topicTitle = null;
   };
   return factory;
