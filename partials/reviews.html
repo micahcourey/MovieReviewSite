@@ -2,7 +2,7 @@
   <div class="row">
     <div ng-show="topics.length">
       <div class="col-md-4">
-        <legend><h2>Movie Reviews</h2></legend>
+        <legend><h3>Movie Reviews</h3></legend>
           <div ng-repeat="item in topics">
             <a href="" ng-click="showBody = ! showBody">{{ item.title }}</a>
             <div ng-show="showBody">
@@ -12,11 +12,11 @@
       </div>
     </div>
     <div class="col-md-8">
-      <h3>Add a movie review</h3>
+      <legend><h3>Add a movie review</h3></legend>
       <form ng-submit="MoviesFactory.addTopic()" class="form-inline" role="form">
         <div class="form-group">
-          <input type="text" ng-model="MoviesFactory.topicTitle" class="form-control" placeholder="Enter a title"><br>
-          <input type="text" ng-model="MoviesFactory.topicBody" class="form-control" placeholder="Enter your review"><br>
+          <input size="60" type="text" ng-model="MoviesFactory.topicTitle" class="form-control" placeholder="Enter a title"><br><br>
+          <textarea rows="4" cols="60" type="text" ng-model="MoviesFactory.topicBody" class="form-control" placeholder="Enter your review"></textarea><br><br>
         </div><br>
         <button type="submit">Submit</button>
       </form>
