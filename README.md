@@ -11,7 +11,12 @@ Setup
 ```console
 $ git clone https://github.com/micahcourey/MovieReviewSite.git
 ```
-* Open 'index.html' in a browser of your choice
+* Start server inside project folder:
+```console
+$ python -m SimpleHTTPServer
+```
+* type localhost:8000 in your browsers address bar
+* Start
 * Enjoy!
 
 Technologies Used
@@ -20,4 +25,4 @@ JavaScript, AngularJS, HTML, Bootstrap, CSS
 
 License
 ----------
-MIT License, Copyright (c) 2015 Marvin Nikijuluw & Micah Courey
+MIT License, Copyright (c) 2015 Micah Courey
