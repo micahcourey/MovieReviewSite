@@ -4,8 +4,10 @@
 }
 
 .darkmode {
+  -webkit-filter: invert(100%);
   background-color: black;
-  color: red;
+  /*background-color: black;
+  color: red;*/
 }
 
 .enter {
