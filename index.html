@@ -5,9 +5,10 @@
     <script src="lib/angular.js"></script>
     <script src="lib/angular-ui-router.js"></script>
     <script src="app.js"></script>
-    <script src="controllers/TopicsController.js"></script>
+    <script src="controllers/ReviewsController.js"></script>
     <script src="controllers/HeadersController.js"></script>
     <script src="services/MoviesFactory.js"></script>
+    <script src="services/UtilitiesFactory.js"></script>
     <script src="directives/MyDirectives.js"></script>
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/styles.css">
@@ -21,7 +22,9 @@
            Enable Dark Mode
          </label>
        </div>
-      <div ui-view="body"></div>
+       <div ui-view="home"></div>
+      <div class="col-md-4" ui-view="body"></div>
+      <div class="col-md-6" ui-view="body-right"></div>
     </div>
   </body>
 </html>

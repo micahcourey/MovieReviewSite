@@ -1,0 +1,14 @@
+<div>
+  <legend><h3>{{ selectedReview.title }}</h3></legend>
+  <p>{{ selectedReview.body }}</p>
+</div>
+<div class="col-md-8">
+  <legend><h3>Add a movie review</h3></legend>
+  <form ng-submit="MoviesFactory.addReview()" class="form-inline" role="form">
+    <div class="form-group">
+      <input size="60" type="text" ng-model="MoviesFactory.reviewTitle" class="form-control" placeholder="Enter a title"><br><br>
+      <textarea rows="4" cols="60" type="text" ng-model="MoviesFactory.reviewBody" class="form-control" placeholder="Enter your review"></textarea><br><br>
+    </div><br>
+    <button class="btn btn-info" type="submit">Submit</button>
+  </form>
+</div>

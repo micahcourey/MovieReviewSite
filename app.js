@@ -8,14 +8,14 @@ movieSite.config(function($stateProvider, $urlRouterProvider) {
         templateUrl: "partials/header.html",
         controller: "HeadersCtrl"
       },
-      'body': {
+      'home': {
         templateUrl: "partials/home.html"
       }
     }
   });
 
   $stateProvider.state('reviews', {
-    url: "/reviews",
+    url: "/reviews/:id",
     views: {
       'header': {
         templateUrl: "partials/header.html",
@@ -23,7 +23,11 @@ movieSite.config(function($stateProvider, $urlRouterProvider) {
       },
       'body': {
         templateUrl: "partials/reviews.html",
-        controller: "TopicsCtrl"
+        controller: "ReviewsCtrl"
+      },
+      'body-right': {
+        templateUrl: "partials/review-body.html",
+        controller: "ReviewsCtrl"
       }
     }
   });
