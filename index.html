@@ -16,13 +16,14 @@
   <body ng-class="{ darkmode: dark }">
     <div class="container">
       <div ui-view="header"></div>
-      <div class="checkbox">
-         <label>
-           <input type="checkbox" ng-model="dark">
-           Enable Dark Mode
-         </label>
-       </div>
-       <div ui-view="home"></div>
+      <div class="onoffswitch">
+        <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" ng-model="dark" checked>
+        <label class="onoffswitch-label" for="myonoffswitch">
+          <span class="onoffswitch-inner"></span>
+          <span class="onoffswitch-switch"></span>
+        </label>
+      </div>
+      <div ui-view="home"></div>
       <div class="col-md-4" ui-view="body"></div>
       <div class="col-md-6" ui-view="body-right"></div>
     </div>
