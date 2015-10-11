@@ -3,7 +3,7 @@ Movie Review Site
 
 By Micah Courey, 02-Oct-2015
 
-A website built in AngularJS that allows users to write reviews about movies.
+A website built in AngularJS that allows users to write movie reviews. The site includes a dark theme for nighttime viewing which can be enabled by the flip of a switch. check it out at: http://micahcourey.github.io/MovieReviewSite
 
 Setup
 ----------
