@@ -3,8 +3,8 @@
     <div ng-show="reviews.length">
       <div class="col-md-4">
         <legend><h3>Movie Reviews</h3></legend>
-        <div ng-repeat="item in reviews">
-          <a ui-sref="reviews({ id: item.id })">{{ item.title }}</a>
+        <div class="list" ng-repeat="item in reviews">
+          <a class="list" ui-sref="reviews({ id: item.id })">{{ item.title }}</a>
         </div>
       </div>
     </div>

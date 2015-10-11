@@ -1,19 +1,49 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400);
+@import url(https://fonts.googleapis.com/css?family=Merriweather);
+
 .center {
   margin-top: 10%;
   text-align: center;
 }
 
+body {
+  background-color: #FBFFFE;
+  color: #080010;
+  margin-top: 80px;
+}
+
 .darkmode {
   filter: invert(100%);
   -webkit-filter: invert(100%);
-  background-color: black;
-  /*background-color: black;
-  color: red;*/
+  background-color: #080010;
 }
 
-.enter {
-  width: 150px
+.btn-huge {
+    padding:12px 22px;
+    font-size:34px;
+    width: 270px;
 }
+
+.btn {
+  background-color: #DB3A34;
+  border-radius: 0;
+}
+
+h1, h2, h3, .btn {
+  font-family: 'Lato', sans-serif;
+}
+
+p, .list {
+  font-family: 'Merriweather', serif;
+  font-size: 16px;
+}
+
+.list {
+  margin-top: 8px;
+}
+
+
+/*************** Night Mode Switch **************/
 
 .onoffswitch {
     position: relative; width: 107px;
@@ -24,7 +54,7 @@
 }
 .onoffswitch-label {
     display: block; overflow: hidden; cursor: pointer;
-    border: 2px solid #999999; border-radius: 20px;
+    border: 2px solid #66717E; border-radius: 20px;
 }
 .onoffswitch-inner {
     display: block; width: 200%; margin-left: -100%;
@@ -38,20 +68,20 @@
 .onoffswitch-inner:before {
     content: "Day Mode";
     padding-left: 10px;
-    background-color: #5B5E61; color: #FFFFFF;
+    background-color: #080010; color: #FBFFFE;
 }
 .onoffswitch-inner:after {
     content: "Night Mode";
     padding-right: 10px;
-    background-color: #5B5E61; color: #FFFFFF;
+    background-color: #080010; color: #FBFFFE;
     text-align: right;
 }
 .onoffswitch-switch {
     display: block; width: 18px; margin: 6px;
-    background: #FFFFFF;
+    background: #FBFFFE;
     position: absolute; top: 0; bottom: 0;
     right: 73px;
-    border: 2px solid #999999; border-radius: 20px;
+    border: 2px solid #66717E; border-radius: 20px;
     transition: all 0.3s ease-in 0s;
 }
 .onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
@@ -59,4 +89,68 @@
 }
 .onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
     right: 0px;
+}
+
+/**************** Navbar ****************/
+
+@media (min-width:768px) {
+    h1 {
+        font-size:68px;
+    }
+}
+
+a {
+    color:#080010;
+}
+
+a:hover {
+    color:#000;
+}
+
+.text-danger, a.text-danger {
+    color:#fff;
+}
+
+.navbar-brand {
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    font-size: 22px;
+}
+
+.icon-bar {
+	background-color:#080010;
+}
+
+.navbar-trans {
+	background-color:#DB3A34;
+    color:#cdcdcd;
+    border-width:0;
+}
+
+.navbar-trans .navbar-brand, .navbar-trans >.container-fluid .navbar-brand {
+    padding: 14px;
+    color:#080010;
+}
+
+.navbar-trans li>a:focus,.navbar-trans li.active {
+	background-color:#000;
+	color:#000;
+}
+
+.navbar-trans li>a:hover {
+	background-color:#fff;
+	color:#fff;
+	opacity:0.5;
+}
+
+.navbar-trans a{
+    color:#cdcdcd;
+    letter-spacing:1px;
+}
+
+.navbar-trans .form-control:focus {
+	border-color: #eee;
+	outline: 0;
+	-webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,0.075),0 0 8px rgba(100,100,100,0.6);
+	box-shadow: inset 0 1px 1px rgba(0,0,0,0.075),0 0 8px rgba(100,100,100,0.6);
 }

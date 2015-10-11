@@ -12,7 +12,7 @@ movieSite.factory('MoviesFactory', function MoviesFactory() {
       id: 2
     },
     {
-      title: "Shanghai is a beautiful and superbly acted movie",
+      title: "Shanghai is beautiful and superbly acted",
       body: "The cinematography is excellent and successfully recreates the feel of 40's Shanghai, along with the a secretive atmosphere that enhances the film noir mood. The story moves at a good pace where there isn't a scene too many and you have to keep your mind working to uncover the mysteries Paul Soames is trying to solve.",
       id: 3
     },
@@ -23,7 +23,7 @@ movieSite.factory('MoviesFactory', function MoviesFactory() {
     },
     {
       title: "The Matian is a solid space fiction!",
-      body: "Based on the book by Andy Weir, The Martian had a great story to deal with; A man stuck up in Mars, his fight for survival and the efforts by the humans to bring him home. Just look at the basic plot, this thing has something out of the world. But the plot is so unique that, this thing can easily formulate a boring tale; this is where The Martian makes a difference. The movie is laced with situational wits from the start to end, blended in layers of thrill; the comedy timing of Matt Damon as Mark Watney being the most gripping factor. I didn't expect such a character building; those dialogues just changed the atmosphere. Thanks that, we have ample amount of men on earth (read NASA) to beef up the trill factor, discussing and making space related stuff. While these things stand on one side, the riveting screenplay by Drew Goddard is what makes the viewer stick to seat, we always love to see something that is novel and The Martian has novel stuff in abundance; especially the hypothetical science matter! Though Watney's struggle is layered with humor and positive attitude, there could've been a better emotional approach, still no worries!",
+      body: "Based on the book by Andy Weir, The Martian had a great story to deal with; A man stuck up in Mars, his fight for survival and the efforts by the humans to bring him home. Just look at the basic plot, this thing has something out of the world. But the plot is so unique that, this thing can easily formulate a boring tale; this is where The Martian makes a difference.",
       id: 5
     },
   ];
