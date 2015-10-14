@@ -22,7 +22,7 @@ movieSite.factory('MoviesFactory', function MoviesFactory() {
       id: 4
     },
     {
-      title: "The Matian is a solid space fiction!",
+      title: "The Martian is a solid space fiction!",
       body: "Based on the book by Andy Weir, The Martian had a great story to deal with; A man stuck up in Mars, his fight for survival and the efforts by the humans to bring him home. Just look at the basic plot, this thing has something out of the world. But the plot is so unique that, this thing can easily formulate a boring tale; this is where The Martian makes a difference.",
       id: 5
     },
