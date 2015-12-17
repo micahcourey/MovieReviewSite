@@ -1,5 +1,9 @@
+/****************Fonts*******************/
+
 @import url(http://fonts.googleapis.com/css?family=Lato:300,400);
 @import url(https://fonts.googleapis.com/css?family=Merriweather);
+
+/*************Base Styles*****************/
 
 .center {
   margin-top: 10%;
@@ -19,9 +23,9 @@ body {
 }
 
 .btn-huge {
-    padding:12px 22px;
-    font-size:34px;
-    width: 270px;
+  padding:12px 22px;
+  font-size:34px;
+  width: 270px;
 }
 
 .btn {
@@ -45,75 +49,75 @@ p, .list {
 /*************** Night Mode Switch **************/
 
 .onoffswitch {
-    position: relative; width: 107px;
-    -webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;
+  position: relative; width: 107px;
+  -webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;
 }
 .onoffswitch-checkbox {
-    display: none;
+  display: none;
 }
 .onoffswitch-label {
-    display: block; overflow: hidden; cursor: pointer;
-    border: 2px solid #66717E; border-radius: 20px;
+  display: block; overflow: hidden; cursor: pointer;
+  border: 2px solid #66717E; border-radius: 20px;
 }
 .onoffswitch-inner {
-    display: block; width: 200%; margin-left: -100%;
-    transition: margin 0.3s ease-in 0s;
+  display: block; width: 200%; margin-left: -100%;
+  transition: margin 0.3s ease-in 0s;
 }
 .onoffswitch-inner:before, .onoffswitch-inner:after {
-    display: block; float: left; width: 50%; height: 30px; padding: 0; line-height: 30px;
-    font-size: 12px; color: white; font-family: Trebuchet, Arial, sans-serif; font-weight: bold;
-    box-sizing: border-box;
+  display: block; float: left; width: 50%; height: 30px; padding: 0; line-height: 30px;
+  font-size: 12px; color: white; font-family: Trebuchet, Arial, sans-serif; font-weight: bold;
+  box-sizing: border-box;
 }
 .onoffswitch-inner:before {
-    content: "Day Mode";
-    padding-left: 10px;
-    background-color: #080010; color: #FBFFFE;
+  content: "Day Mode";
+  padding-left: 10px;
+  background-color: #080010; color: #FBFFFE;
 }
 .onoffswitch-inner:after {
-    content: "Night Mode";
-    padding-right: 10px;
-    background-color: #080010; color: #FBFFFE;
-    text-align: right;
+  content: "Night Mode";
+  padding-right: 10px;
+  background-color: #080010; color: #FBFFFE;
+  text-align: right;
 }
 .onoffswitch-switch {
-    display: block; width: 18px; margin: 6px;
-    background: #FBFFFE;
-    position: absolute; top: 0; bottom: 0;
-    right: 73px;
-    border: 2px solid #66717E; border-radius: 20px;
-    transition: all 0.3s ease-in 0s;
+  display: block; width: 18px; margin: 6px;
+  background: #FBFFFE;
+  position: absolute; top: 0; bottom: 0;
+  right: 73px;
+  border: 2px solid #66717E; border-radius: 20px;
+  transition: all 0.3s ease-in 0s;
 }
 .onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
-    margin-left: 0;
+  margin-left: 0;
 }
 .onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
-    right: 0px;
+  right: 0px;
 }
 
 /**************** Navbar ****************/
 
 @media (min-width:768px) {
-    h1 {
-        font-size:68px;
-    }
+  h1 {
+    font-size:68px;
+  }
 }
 
 a {
-    color:#080010;
+  color:#080010;
 }
 
 a:hover {
-    color:#000;
+  color:#000;
 }
 
 .text-danger, a.text-danger {
-    color:#fff;
+  color:#fff;
 }
 
 .navbar-brand {
-    font-family: 'Lato', sans-serif;
-    font-weight: 500;
-    font-size: 22px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 500;
+  font-size: 22px;
 }
 
 .icon-bar {
@@ -122,13 +126,13 @@ a:hover {
 
 .navbar-trans {
 	background-color:#DB3A34;
-    color:#cdcdcd;
-    border-width:0;
+  color:#cdcdcd;
+  border-width:0;
 }
 
 .navbar-trans .navbar-brand, .navbar-trans >.container-fluid .navbar-brand {
-    padding: 14px;
-    color:#080010;
+  padding: 14px;
+  color:#080010;
 }
 
 .navbar-trans li>a:focus,.navbar-trans li.active {
@@ -143,8 +147,8 @@ a:hover {
 }
 
 .navbar-trans a{
-    color:#cdcdcd;
-    letter-spacing:1px;
+  color:#cdcdcd;
+  letter-spacing:1px;
 }
 
 .navbar-trans .form-control:focus {
